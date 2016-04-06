@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'PS2';
+    src: url('pressstart2p-webfont.eot');
+    src: url('pressstart2p-webfont.eot?#iefix') format('embedded-opentype'),
+         url('pressstart2p-webfont.woff2') format('woff2'),
+         url('pressstart2p-webfont.woff') format('woff'),
+         url('pressstart2p-webfont.ttf') format('truetype'),
+         url('pressstart2p-webfont.svg#press_start_2pregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#app {
+  height: 100%;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: 'PS2', sans-serif;
+  text-transform: uppercase;
+  color: #424242;
+}
+
+.btn {
+  transition: all linear 150ms;
+  display: block;
+  padding: 1rem 1.4rem;
+  margin: 0 auto;
+  font-family: 'PS2', sans-serif;
+  font-size: 1.2rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-bottom: 0.3rem solid #2E7D32;
+}
+.btn-with-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btn-with-label .btn-with-label__label {
+  font-family: 'PS2', sans-serif;
+  font-size: 1rem;
+  color: #424242;
+  margin-bottom: 1rem;
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 4rem;
+  color: #212121;
+  text-transform: uppercase;
+  font-family: 'PS2', sans-serif;
+  font-size: 2em;
+}
+
+.main-view, .finished-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.main-view .main-view__title-area {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main-view .main-view__title-area .title-area__title {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 4rem;
+  padding: 1.4rem 0 1rem;
+  background: #F44336;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'PS2', sans-serif;
+  font-size: 3em;
+}
+.main-view .main-view__action-area {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 1em;
+}
+
+.genius {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.color-sequence-container {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.color-sequence-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 1em solid #212121;
+  overflow: hidden;
+}
+.color-sequence-box .color-sequence-box__item {
+  transition: background-color 75ms linear;
+  flex: 1 1 auto;
+  width: 50%;
+}
+.color-sequence-box .color-sequence-box__item.color-sequence-box__item--green {
+  background-color: #4CAF50;
+}
+.color-sequence-box .color-sequence-box__item.color-sequence-box__item--green.color-sequence-box__item--green-active {
+  background-color: #C8E6C9;
+}
+.color-sequence-box .color-sequence-box__item.color-sequence-box__item--red {
+  background-color: #F44336;
+}
+.color-sequence-box .color-sequence-box__item.color-sequence-box__item--red.color-sequence-box__item--red-active {
+  background-color: #FFCDD2;
+}
+.color-sequence-box .color-sequence-box__item.color-sequence-box__item--yellow {
+  background-color: #FFEB3B;
+}
+.color-sequence-box .color-sequence-box__item.color-sequence-box__item--yellow.color-sequence-box__item--yellow-active {
+  background-color: #FFF9C4;
+}
+.color-sequence-box .color-sequence-box__item.color-sequence-box__item--blue {
+  background-color: #2196F3;
+}
+.color-sequence-box .color-sequence-box__item.color-sequence-box__item--blue.color-sequence-box__item--blue-active {
+  background-color: #BBDEFB;
+}
+.finished-view .finished-view__score {
+  margin-bottom: 3rem;
+}
+.game-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3em;
+  font-family: 'PS2', sans-serif;
+}
