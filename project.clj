@@ -23,7 +23,7 @@
                                    :output-to "resources/public/js/genius.js"
                                    :output-dir "resources/public/js/out"
                                    :source-map-timestamp true
-                                   :foreign-libs [{:file "resources/public/js/lib/wad.js"
+                                   :foreign-libs [{:file "resources/public/lib/wad.js"
                                                    :provides ["wad"]}]
                                    :externs ["resources/public/externs/wad.js"]}}
                        {:id "prod"
