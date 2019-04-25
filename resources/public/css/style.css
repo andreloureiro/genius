@@ -22,6 +22,7 @@ html, body {
 body {
   font-family: 'PS2', sans-serif;
   text-transform: uppercase;
+  background: white;
   color: #424242;
 }
 
